@@ -7,11 +7,15 @@ phases:
     commands:
       - echo Build started on `date`
       - echo Installing dependencies...
+      - pwd
+      - ls -la
+      - find . -name "package.json"
       - npm install
   build:
     commands:
       - echo Building the application...
       - echo No compilation needed for static HTML
+      - npm run build  # if you have a build script
   post_build:
     commands:
       - echo Build completed on `date`
