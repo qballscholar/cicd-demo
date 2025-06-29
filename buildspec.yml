@@ -5,6 +5,7 @@ phases:
       nodejs: 18
   pre_build:
     commands:
+      - chmod +x scripts/*.sh
       - echo Build started on `date`
       - echo Installing dependencies...
       - pwd
