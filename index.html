@@ -1,33 +1,44 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
 <head>
-    <title>My CI/CD Demo - Version 2 - You are doing great!</title>
+    <title>My CI/CD Demo - Version 3</title>
     <style>
         body { 
             font-family: Arial, sans-serif; 
             text-align: center; 
             padding: 50px; 
-            background-color: #f8f9fa;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            margin: 0;
         }
         .version { 
-            background-color: #27ae60; 
-            color: white; 
-            padding: 20px; 
-            border-radius: 10px; 
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            background-color: rgba(255,255,255,0.9); 
+            color: #333; 
+            padding: 30px; 
+            border-radius: 15px; 
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3); 
+            max-width: 500px;
+            margin: 0 auto;
         }
         .features { 
             margin: 30px auto 0 auto; 
             padding: 20px; 
-            background-color: #ecf0f1; 
-            border-radius: 5px; 
-            max-width: 400px;
-            box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+            background-color: rgba(255,255,255,0.1); 
+            border-radius: 10px; 
+            max-width: 500px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.08);
         }
         .features ul {
             text-align: left;
-            margin: 0 auto;
+            margin: 0 auto 10px auto;
             display: inline-block;
+            color: #222;
+            font-size: 16px;
+        }
+        .deployment-info { 
+            margin-top: 15px; 
+            font-size: 13px; 
+            color: #666; 
         }
         h1, h2, h3 {
             margin-top: 0;
@@ -36,17 +47,22 @@
 </head>
 <body>
     <div class="version">
-        <h1>Welcome to My Enhanced Application</h1>
-        <h2>Version 2.0</h2>
-        <p>This version includes new features!</p>
+        <h1>🚀 My Production-Ready Application</h1>
+        <h2>Version 3.0 - Production Release</h2>
+        <p>Fully automated deployment pipeline!</p>
     </div>
     <div class="features">
-        <h3>New Features:</h3>
+        <h3>✨ Latest Features:</h3>
         <ul>
-            <li>Improved styling</li>
-            <li>Better user interface</li>
-            <li>Enhanced functionality</li>
+            <li>Modern responsive design</li>
+            <li>Production-ready styling</li>
+            <li>Automated CI/CD pipeline</li>
+            <li>Version control integration</li>
         </ul>
+        <div class="deployment-info">
+            <p>Deployed automatically via AWS CodePipeline</p>
+            <p>Build: CodeBuild | Deploy: CodeDeploy | Target: EC2</p>
+        </div>
     </div>
 </body>
 </html>
