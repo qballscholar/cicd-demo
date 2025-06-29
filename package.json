@@ -1,12 +1,12 @@
 {
-  "name": "cicd-pipeline-demo",
+  "name": "my-cicd-demo",
   "version": "1.0.0",
-  "description": "A simple cicd pipeline demo application",
-  "keywords",
-  "main": "index.js",
+  "description": "A simple static web application deployed with AWS CI/CD",
+  "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "echo 'No build step needed for static HTML'; exit 0",
+    "test": "echo 'No tests configured for this static site'; exit 0"
   },
-  "author": "me",
+  "author": "Your Name",
   "license": "ISC"
 }
